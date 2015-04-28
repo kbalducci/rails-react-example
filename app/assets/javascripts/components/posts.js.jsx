@@ -4,7 +4,7 @@ var Posts = React.createClass({
   },
   render: function() {
     var allPosts = this.state.posts.map(function(post) {
-      return <EachPost key={post.id} post={post} />;
+      return <Post key={post.id} post={post} />;
     });
     return (
       <div className='postDiv'>
@@ -14,10 +14,10 @@ var Posts = React.createClass({
   }
 });
 
-var EachPost = React.createClass({
+var Post = React.createClass({
   render: function() {
     return(      
-      <div className='eachPost'>
+      <div className='post'>
         <h2>{ this.props.post.title }</h2>
         <span className='postBody'> { this.props.post.body } </span>
       </div>
