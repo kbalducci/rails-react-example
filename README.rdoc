@@ -4,6 +4,8 @@ This is a sample rails app using react for UI.
 To run the app simply run:
 <code>
 	bundle install && rake db:migrate
+</code>
+<code>
 	rails server
 </code>
 
